@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/DoctorSignup.css">
+    <title>Donor</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="#" id="logo">Medico</a>
+      </div>
+      <div class="nav-right">
+        <a href="/" id="home">Home</a>
+        <a href="index.html#whoarewe" id="about">About Us</a>
+        <!-- <button id="join">
+          <span class="transition"></span>
+          <span class="gradient"></span>
+          <span class="label">Join Us</span>
+        </button> -->
+      </div>
+    </nav>
+    <h2 id="d">Health Personnel Registration</h2>
+    <!-- <h4>"It's not how much we give,but how much love we put into giving" -Mother Teresa</h4> -->
+    <div class="card-bunch">
+      <!-- CARD TO ADD GOODS -->
+      <div class="card" id="addgoods">
+        <div class="container">
+          <h3>Health Personnel</h3>
+          <form action="/doctorSignup" method="post">
+            <div class="form-control">
+              <label for="text">Category</label><br />
+              <!-- <input type="" id="text" placeholder="Enter Product Name..." /> -->
+              <select id="mySelect" name="select" onchange="storeValue()" required>
+                <option>Select</option>
+                <option value="Doctor" id="indianbread">
+                  Doctor
+                </option>
+                <option value="Pharmacist" id="rice">Pharmacist</option>
+                <option value="Lab technician" id="pulses">Lab Technician</option>
+                <option value="Medical records clerk" id="desserts">Medical records clerk</option>
+            
+                <!-- <option value="Cold Snacks" id="coldsnacks">Cold Snacks</option> -->
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="quantity">UPR Number<br /> </label>
+              <input
+                type="text"
+                id="quantity"
+                min="1"
+                placeholder="Enter UPR number"
+                name="upr"
+                required
+                onchange="getQuantity()"
+              />
+            </div>
+            <div class="form-control">
+              <label for="quantity">Name<br /> </label>
+              <input
+                type="text"
+                id="quantity"
+                min="1"
+                placeholder="Enter your full name"
+                name="name"
+                required
+                onchange="getQuantity()"
+              />
+            </div>
+            <div class="form-control">
+              <label for="quantity">Username<br /> </label>
+              <input
+                type="text"
+                id="quantity"
+                min="1"
+                placeholder="Enter username"
+                name="username"
+                required
+                onchange="getQuantity()"
+              />
+            </div>
+            <div class="form-control">
+              <label for="quantity">Email<br /> </label>
+              <input
+                type="text"
+                id="quantity"
+                min="1"
+                placeholder="Enter email"
+                name="email"
+                required
+                onchange="getQuantity()"
+              />
+            </div>
+            <div class="form-control">
+              <label for="quantity">Password<br /> </label>
+              <input
+                type="text"
+                id="quantity"
+                min="1"
+                placeholder="Enter password"
+                name="password"
+                required
+                onchange="getQuantity()"
+              />
+            </div>
+            <div class="form-control">
+              <label for="quantity">Hospital/Clinic<br /> </label>
+              <input
+                type="text"
+                id="quantity"
+                min="1"
+                placeholder="Enter Hospital/clinic name"
+                name="hospital"
+                required
+                onchange="getQuantity()"
+              />
+            </div>
+            <!-- <div class="form-control">
+              <label for="Bestbeforeday"
+                >Was the food prepared less than 18 hours ago?</label
+              ><br />
+              <div class="check">
+                <input
+                  type="checkbox"
+                  placeholder="Enter amount..."
+                  id="yes18"
+                />
+                <label for="yes18">Yes</label>
+              </div>
+              <br />
+            </div> -->
+            <!-- <button id="btn">Add Goods</button> -->
+            <!-- <button id="btn">
+              <span>Add Donation</span>
+            </button> -->
+            <button id="btn1" type="submit"><span style="color: black;">Finish and Submit</span></button>  
+            </form>
+   
+        </div>
+      </div>
+      <!-- CARD FOR YOUR LOCATION -->
+      <!-- <div class="card" id="goodslist">
+        <h3>Health personnel information</h3>
+        <ul id="list" class="list"></ul>
+      </div>
+      <!-- CARD FOR LIST OF DONATIONS -->
+      <!-- <div class="card" id="location">
+        <h3>Your Location</h3>
+        <div id="map"></div>
+      </div>
+    </div> --> -->
+
+    <!-- FOOTER
+    <footer class="footer">
+      <div class="trademark footer_element">
+        <img
+          src="logo.png"
+          width="75px"
+          alt="mcd"
+          style="background-color: white"
+        />
+        <p>© Annpurna Founation 2014-2021 (Yamkar Project Trust)</p>
+      </div>
+      <div class="social footer_element">
+        <h2>Connect with us</h2>
+        <div class="social_media">
+          <a href="https://www.instagram.com/csi_tsec/"
+            ><img src="instagram-line.png" alt="insta" class="socials"
+          /></a>
+          <a href="https://www.facebook.com/csitsecbranch/"
+            ><img src="facebook-circle-fill.png" alt="insta" class="socials"
+          /></a>
+          <a
+            href="https://in.linkedin.com/company/csi-tsec?original_referer=https%3A%2F%2Fwww.google.com%2F"
+            ><img src="linkedin-box-fill.png" alt="insta" class="socials"
+          /></a>
+          <a href="https://mobile.twitter.com/csi_tsec">
+            <img src="twitter-line.png" class="socials" alt="twit"
+          /></a>
+          <a href="https://www.youtube.com/channel/UCGj3zDHE2xAXHZ2v24CxObA"
+            ><img src="youtube-line.png" class="socials" alt="yt"
+          /></a>
+        </div>
+      </div>
+      <div class="footer_element data">
+        <div>NGO Registration Number: 71/BK4/2015</div>
+        <div>12AA, 80G & FCRA Certified</div>
+        <div>FSSAI Registration number: 22419566000215</div>
+        <div>
+          Corporate Office - No 4, Kothari Layout, 1st street, Ghatkopar,
+          Mumbai, Maharashtra, 641045.
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCweqTp4h-6rtfJMXq3cPPZiXBYytDHYso&callback=initMap&libraries=&v=weekly"
+      async
+    ></script> -->
+  </body>
+  <script src="DoctorForm.js"></script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medico</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/DoctorHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-jD+zMpKsNUgMw+1E8NtGGr25Nvqg9etzkDXt/sG8WYnh/xyv2Q1zLwzIh8aDleGnyJ+18GIlIjPEnYibYhJc1Q=="
+        crossorigin="anonymous" />
+    <script type="text/javascript" src="https://webqr.com/llqrcode.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <script type="text/javascript" src="https://webqr.com/webqr.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">Medico</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="profile" style="    
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+">
+        <div class="qr" style="
+          
+   
+    width: 800px;
+    height: 177px;
+    margin-top: 2.2em;
+    margin-left: 2rem;
+
+    ">
+            <div class="row">
+                <div class="col">
+                    <div id="reader"></div>
+                    <div id="result"></div>
+
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="task" draggable="true" style="
+        width: 100%;
+        position: absolute;
+        right: 0;
+        height: 177px;
+        margin-top: 2.2rem;
+        margin-right: 2rem;
+    ">
+            <div class="tags">
+                <span class="tag" style="    margin-left: 32px;">Profession</span>
+                <button class="options">
+                    <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000">
+                        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z">
+                                    </path>
+                                    <path
+                                        d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z">
+                                    </path>
+                                    <path
+                                        d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <ul style="list-style: none;    list-style: none;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-left: -1px;">
+                <li>Name:   <%=  user.name  %>             </li>
+                <li>Speciality:   <%=  user.select  %>             </li>
+                <li>UPR ID:   <%=  user.upr  %>             </li>
+                <li>Username:   <%=  user.username  %>             </li>
+                <li>Contact No:       <%= user.email  %>          </li>
+                <li>Hospital Affliated With:          <%= user.hospital   %>          </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div>
+        <h3 style="padding-top: 20px;">Patient's Details</h3>
+        <div></div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.0/html5-qrcode.min.js'></script>
+    <script src="/js/DoctorHome.js"> </script>
+
+</body>
+
+</html>

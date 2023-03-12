@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/patientSignup.css" />
+    <title>Retailer Login</title>
+  </head>
+  <body>
+
+    <nav style="background-color: #217cff;">
+        <div class="nav-left">
+          <a href="#" id="logo">Medico</a>
+        </div>
+        <div class="nav-right">
+          <a href="/" id="home">Home</a>
+          <a href="index.html#whoarewe" id="about">About Us</a>
+          <!-- <button id="join">
+              <span class="transition"></span>
+              <span class="gradient"></span>
+              <span class="label">Join Us</span>
+            </button> -->
+        </div>
+      </nav>
+      <h2 id="d">Be a part of smart healthcare</h2>
+      <h4 style="text-align: center;">"Time and health are two precious assets that we don't recognize and appreciate until they have been depleted"</h4>
+      <div class="card-bunch">
+        <div>
+          <div class="container">
+            <h3>Patient Registration</h3>
+              <form action="/patientSignup" method="post" id="form">
+              <div class="form-control">
+                  <label for="paitentName">Name</label>
+                  <input type="text" name="name" >
+                  <label for="paitentAge">Age</label>
+                  <input type="text" name="age" >
+                  <label for="paitentName">Weight</label>
+                  <input type="text" name="weight" >
+                  <label for="paitentName">Allergies</label>
+                  <input type="text" name="allergies" >
+                  <label for="paitentName">Gender</label>
+                  <input type="text" name="gender" >
+                  <label for="paitentName">Username</label>
+                  <input type="text" name="username" >
+                  <label for="paitentName">Password</label>
+                  <input type="password" name="password" >
+                
+                  <label for="bloodpressure"
+                  >How is your blood pressure?</label
+                >
+                <div class="container">
+                  <label><input type="checkbox" name="bloodPressure" value="high" onclick="uncheckOthers(this)">High</label>
+                  <label><input type="checkbox" name="bloodPressure" value="normal" onclick="uncheckOthers(this)">Normal</label>
+                  <label><input type="checkbox" name="bloodPressure" value="low" onclick="uncheckOthers(this)">Low</label>
+              </div>
+                <label for="diabestes"
+                  >Do you have diabetes?</label
+                >
+                <div class="container">
+                  <label><input type="checkbox" name="diabetes" value="yes" onclick="uncheckOthers2(this)">Yes</label>
+                  <label><input type="checkbox" name="diabetes" value="no" onclick="uncheckOthers2(this)">No</label>
+                
+              </div>
+             
+                 
+                <!-- <input type="" id="text" placeholder="Enter Product Name..." /> -->
+               
+              </div>
+              
+              </div>
+              <button id="btn"><span>Submit</span></button>    
+                      <!-- before clicking the finish buthon make sure that the localstorage data  -->
+              </form>
+          </div>
+        </div>
+      
+      </div>
+</body>
+<script>
+    function uncheckOthers(clickedCheckbox) {
+    const checkboxes = document.getElementsByName('option1');
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] !== clickedCheckbox) {
+            checkboxes[i].checked = false;
+        }
+    }
+    const checkboxes2 = document.getElementsByName('option2');
+    for (let i = 0; i < checkboxes2.length; i++) {
+        if (checkboxes2[i] !== clickedCheckbox) {
+            checkboxes2[i].checked = false;
+        }
+    }
+}
+function uncheckOthers2(clickedCheckbox) {
+    const checkboxes2 = document.getElementsByName('option2');
+    for (let i = 0; i < checkboxes2.length; i++) {
+        if (checkboxes2[i] !== clickedCheckbox) {
+            checkboxes2[i].checked = false;
+        }
+    }
+}
+
+</script>
+</html>

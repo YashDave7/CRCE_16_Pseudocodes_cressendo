@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Medico</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/patientHome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jD+zMpKsNUgMw+1E8NtGGr25Nvqg9etzkDXt/sG8WYnh/xyv2Q1zLwzIh8aDleGnyJ+18GIlIjPEnYibYhJc1Q==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/4b561163af.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #f6f6f6;">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+	  <a class="navbar-brand" href="#">Medico</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="/">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About Us</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Features</a>
+	      </li>
+	     
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Contact Us</a>
+	      </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/">Logout</a>
+		</li>
+	    </ul>
+	  </div>
+	</nav>
+
+
+
+    <div class="paitentProfile">
+        <div class="profile" style="    
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    ">
+        <div class="qr" style="
+              
+              
+              width: 1080px;
+              height: 400px;
+              margin-top: 2.2em;
+              margin-left: 2rem;
+              
+              ">        
+    
+    <img src="qrCode.png" alt="image" width="300px; height:300px">
+    <h3>Scan QR Code to access Patient's Details</h3>
+    
+    <!-- partial -->
+        </div>
+            <div class="task" draggable="true" style="
+            width: 100%;
+            position: absolute;
+            right: 0;
+            
+            margin-top: 2.2rem;
+            margin-right: 2rem;
+        ">
+                <div class="tags">
+                  <span class="tag" style="    margin-left: 32px;">Patient</span>
+                  <button class="options">
+                    <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z"></path> <path d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z"></path> <path d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z"></path> </g> </g> </g></svg>
+                  </button>
+                </div>
+                <ul style="list-style: none;    list-style: none;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                margin-left: -1px;">
+                    <li>Name: <%=  user.name  %></li>
+                    <li>Age: <%=  user.age  %></li>
+                    <li>Weight: <%=  user.weight  %></li>
+                    <li>Username: <%=  user.username  %></li>
+                    <li>Allergies: <%=  user.allergies  %></li>
+                    <li>Gender: <%=  user.gender  %></li>
+                    <li>Blood Pressure: <%=  user.bloodPressure  %></li>
+                    <li>Diabetes: <%=  user.diabetes  %></li>
+                </ul>
+              
+              </div>
+        </div>
+    
+        <div>
+            <h3 style="padding-top: 20px;"></h3>
+            <div></div>
+        </div>
+    </div>
+    <div class="footer section_padding">
+        <div class="container">
+        <div class="row justify-content-between">
+        <div class="col-xl-2 col-md-4 col-sm-6 single-footer-widget">
+        <a href="#" class="footer_logo"> <img src="" alt="#"> </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+        <div class="social_logo">
+        <a href="#"><i class="ti-facebook"></i></a>
+        <a href="#"> <i class="ti-twitter"></i> </a>
+        <a href="#"><i class="ti-instagram"></i></a>
+        <a href="#"><i class="ti-skype"></i></a>
+        </div>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+        <h4>Quick Links</h4>
+        <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Department</a></li>
+        <li><a href="#"> Online payment</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Department</a></li>
+        </ul>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+        <h4>Explore</h4>
+        <ul>
+        <li><a href="#">In the community</a></li>
+        <li><a href="#">IU health foundation</a></li>
+        <li><a href="#">Family support </a></li>
+        <li><a href="#">Business solution</a></li>
+        <li><a href="#">Community clinic</a></li>
+        </ul>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-6 single-footer-widget">
+        <h4>Resources</h4>
+        <ul>
+        <li><a href="#">Lights were season</a></li>
+        <li><a href="#"> Their is let wherein</a></li>
+        <li><a href="#">which given over</a></li>
+        <li><a href="#">Without given She</a></li>
+        <li><a href="#">Isn two signs think</a></li>
+        </ul>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-md-6 single-footer-widget">
+        <h4>Newsletter</h4>
+        <p>Seed good winged wherein which night multiply
+        midst does not fruitful</p>
+        <div class="form-wrap" id="mc_embed_signup">
+        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline" novalidate="true">
+        <input class="form-control" name="EMAIL" placeholder="Your Email Address " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+        <button class="click-btn btn btn-default text-uppercase"> <i class="ti-angle-right"></i>
+        </button>
+        <div style="position: absolute; left: -5000px;">
+        <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+        </div>
+        <div class="info" style="">Submitting...</div>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <footer id="footer">
+        <i class="fa-brands fa-twitter  contlogo"></i>
+        <i class="fa-brands fa-facebook contlogo"></i>
+        <i class="fa-brands fa-instagram contlogo"></i>
+        <i class="fa-solid fa-envelope  contlogo"></i>
+        <p>© Copyright Pseudocodes</p>
+    
+      </footer>
+</body>
+</html>

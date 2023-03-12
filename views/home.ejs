@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jD+zMpKsNUgMw+1E8NtGGr25Nvqg9etzkDXt/sG8WYnh/xyv2Q1zLwzIh8aDleGnyJ+18GIlIjPEnYibYhJc1Q==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/4b561163af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+	 <a class="navbar-brand" href="#"  style="color: #007bff; font-weight: bolder;"><img src="\images\logo.png" alt=""> MEDICO</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About Us</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#services">Services</a>
+	      </li>
+	     
+	      <li class="nav-item">
+	        <a class="nav-link" href="#footerss">Contact Us</a>
+	      </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/patientLogin">Patient Login</a>
+		</li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/DoctorLogin">Provider Login</a>
+		</li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Welcome to Our EHR Website</h1>
+					<p>EHRs are digital platforms designed to capture, store, and manage patient health information. Our website is dedicated to providing resources and information on EHRs, including their benefits, challenges, and best practices for implementation and use.</p>
+					<button class="btn btn-primary"><a href="patientSignup">Patient</a></button>
+					<button class="btn btn-primary"><a href="DoctorSignup">Healthcare provider</a></button>
+				</div>
+				<div class="col-lg-6">
+					<img src="\images\img1.svg" alt="hero image">
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Why EHR Section -->
+    <section id="about"  class="ehr-section">
+		<div class="container">
+			<div class="row">
+                <div class="col-lg-6">
+					<img src="\images\img2.svg" alt="hero image">
+				</div>
+				<div class="col-lg-6">
+					<h1>Why do we need EHR?</h1>
+					<p>EHRs are digital versions of medical records with patient information. They improve patient care, reduce errors, enhance communication, increase efficiency, and facilitate research. They're required by law in some healthcare organizations. EHRs also improve patient engagement by providing them access to their records and test results. </p>
+					<!-- <button class="btn btn-primary">Learn More</button> -->
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<!-- Features Section -->
+<div id="services" class="special">
+<section class="services-section">
+    <div class="container">
+        <h2 style="font-size: 48px;">Our Services</h2>
+        <div class="row gap-5">
+            <div class="col-md-4 py-5">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-sharp fa-solid fa-file"></i>
+                    </div>
+                    <h3>Digital Documentation</h3>
+                    <p>EHR systems allow healthcare providers to create digital records of patient health information, including medical history, diagnoses, medications, and test results.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 py-5">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Clinical Decision Support</h3>
+                    <p>EHR systems can provide alerts, reminders, and other clinical decision support tools to help healthcare providers make informed treatment decisions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-5">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-sharp fa-solid fa-computer"></i>
+                    </div>
+                    <h3>Patient Portals</h3>
+                    <p>EHR systems often include patient portals that allow patients to access their health information, request appointments, and communicate with their healthcare providers</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-5">
+              <div class="service-box">
+                  <div class="service-icon">
+                      <i class="fa-sharp fa-solid fa-envelopes-bulk"></i>
+                  </div>
+                  <h3>Patient Portals</h3>
+                  <p>EHR systems can aggregate and analyze patient data to identify patterns and trends that can inform population health management and quality improvement initiatives.</p>
+              </div>
+          </div>
+          <div class="col-md-4 py-5">
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fa-sharp fa-solid fa-lock"></i>
+                </div>
+                <h3>Security</h3>
+                <p>EHR systems are designed to meet strict security and privacy requirements, protecting patient information from unauthorized access or disclosure.</p>
+            </div>
+        </div>
+        <div class="col-md-4  py-5">
+          <div class="service-box">
+              <div class="service-icon">
+                  <i class="fas fa-ambulance"></i>
+              </div>
+              <h3>Workflow Optimization</h3>
+              <p>EHR systems can streamline clinical workflows by automating tasks such as appointment scheduling, prescription refills, and billing.</p>
+          </div>
+      </div>
+        </div>
+    </div>
+</section></div>
+
+<section class="blog_part section_padding">
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-xl-8">
+  <div class="section_tittle text-center">
+  <h2 class="blgheading" style="padding-bottom: 15px;">Our Blog</h2>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-6">
+  <div class="single-home-blog">
+  <div class="card">
+  <img src="images\img4.jpg" class="card-img-top1" alt="blog" style="    height: 295px;">
+  <div class="card-body">
+  <a href="https://sahyadrihospital.com/blog/difference-between-icu-and-ccu/">
+  <h5 class="card-title">CCU vs. ICU in a Hospital </h5>
+  </a>
+  <ul style="padding-left: 0%;">
+  <li>  <i class="fa-regular fa-user" style="padding: 10px;"></i>Dr. Jagjeet Deshmukh</li>
+  <li> <i class="fa-sharp fa-solid fa-location-dot" style="padding: 10px;"> </i>Mumbai</li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="col-sm-6">
+  <div class="single-home-blog">
+  <div class="card">
+  <img src="images\img5.jpg" class="card-img-top" alt="blog" style="    height: 295px;">
+  <div class="card-body">
+  <a href="https://advancingyourhealth.org/diabetes-not-just-a-medical-condition-a-lifestyle/?">
+  <h5 class="card-title">Diabetes: Not Just a Medical Condition, a Lifestyle </h5>
+  </a>
+  <ul style="padding-left: 0%;">
+  <li> <i class="fa-regular fa-user" style="padding: 10px;"></i> Dr. Carmen Echols</li>
+  <li><i class="fa-sharp fa-solid fa-location-dot" style="padding: 10px;"></i> New York</li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+    </section>
+
+	<script src="home.js"></script>
+    <div id="footerss" class="footer section_padding">
+        <div class="container">
+        <div class="row justify-content-between">
+        <div class="col-xl-2 col-md-4 col-sm-6 single-footer-widget">
+          <a class="navbar-brand" href="#"  style="color: #007bff; font-weight: bolder;"><img src="\images\logo.png" alt=""> MEDICO</a>
+        <p>Electronic Health Record (EHR) systems designed to capture, store, and manage patient health information. </p>
+        <div class="social_logo">
+        <a href="#"><i class="ti-facebook"></i></a>
+        <a href="#"> <i class="ti-twitter"></i> </a>
+        <a href="#"><i class="ti-instagram"></i></a>
+        <a href="#"><i class="ti-skype"></i></a>
+        </div>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+        <h4>Quick Links</h4>
+        <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Department</a></li>
+        <li><a href="#"> Online payment</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Department</a></li>
+        </ul>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+        <h4>Explore</h4>
+        <ul>
+        <li><a href="#">In the community</a></li>
+        <li><a href="#">IU health foundation</a></li>
+        <li><a href="#">Family support </a></li>
+        <li><a href="#">Business solution</a></li>
+        <li><a href="#">Community clinic</a></li>
+        </ul>
+        </div>
+        <div class="col-xl-2 col-sm-6 col-md-6 single-footer-widget">
+        <h4>Resources</h4>
+        <ul>
+        <li><a href="#">HL7 International</a></li>
+        <li><a href="#">ONC Health IT</a></li>
+        <li><a href="#">HIMSS</a></li>
+        <li><a href="#">AHIMA</a></li>
+  
+        </ul>
+        </div>
+        <!-- <div class="col-xl-3 col-sm-6 col-md-6 single-footer-widget">
+        <h4>Newsletter</h4>
+        <p>Seed good winged wherein which night multiply
+        midst does not fruitful</p>
+        <div class="form-wrap" id="mc_embed_signup">
+        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline" novalidate="true">
+        <input class="form-control" name="EMAIL" placeholder="Your Email Address " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+        <button class="click-btn btn btn-default text-uppercase"> <i class="ti-angle-right"></i>
+        </button>
+        <div style="position: absolute; left: -5000px;">
+        <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+        </div>
+        <div class="info" style="">Submitting...</div>
+        </form>
+        </div>
+        </div> -->
+        </div>
+        </div>
+        </div>
+        <footer id="footer">
+        <i class="fa-brands fa-twitter  contlogo"></i>
+        <i class="fa-brands fa-facebook contlogo"></i>
+        <i class="fa-brands fa-instagram contlogo"></i>
+        <!-- <i class="fa-solid fa-envelope  contlogo"></i> -->
+        <p>© Copyright Pseudocodes</p>
+    
+      </footer>
+</body>
+</html>

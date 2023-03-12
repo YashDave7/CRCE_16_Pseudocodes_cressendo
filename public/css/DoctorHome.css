@@ -1,0 +1,205 @@
+/* Navbar */
+.navbar {
+	background-color: #fff;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    transition: 2s;
+}
+.navbar-brand {
+	font-weight: bold;
+	font-size: 24px;
+}
+.navbar-nav .nav-item .nav-link {
+	color: #333;
+	font-weight: 500;
+}
+.navbar-nav .nav-item.active .nav-link {
+	color: #007bff;
+}
+/* Hero Section */
+.hero-section {
+	background-color: #f6f6f6;
+	padding: 100px 0;
+}
+.hero-section h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.hero-section p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #666;
+	margin-bottom: 30px;
+}
+.hero-section button {
+	font-size: 18px;
+	padding: 12px 40px;
+}
+.hero-section img {
+	max-width: 100%;
+	height: auto;
+}
+/* EHR-SECTION */
+.ehr-section {
+	background-color: white;
+ 
+	padding: 100px 0;
+}
+.ehr-section h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.ehr-section p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #666;
+	margin-bottom: 30px;
+}
+.ehr-section button {
+	font-size: 18px;
+	padding: 12px 40px;
+}
+.ehr-section img {
+	max-width: 100%;
+	height: auto;
+}
+/* Services Section */
+.services-section {
+	padding: 180px 0;
+    background-image: url(img4.jpg);
+    background-repeat: no-repeat;
+    
+  background-size: cover;
+}
+.services-section h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.services-section .card {
+	border: none;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+}
+.services-section .card img {
+	max-width: 100%;
+	height: auto;
+}
+.services-section .card-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.services-section .card-text {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 15px;
+}
+.services-section .btn-primary {
+	font-size: 16px;
+	padding: 10px 30px;
+}
+.special{
+    background-color: #007bff;
+}
+.task {
+    position: relative;
+    color: #2e2e2f;
+    cursor: move;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+
+    border: 3px dashed transparent;
+    max-width: 350px;
+  }
+  
+  .task:hover {
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    border-color: rgba(162, 179, 207, 0.2) !important;
+  }
+  
+  .task p {
+    font-size: 15px;
+    margin: 1.2rem 0;
+  }
+  
+  .tag {
+    border-radius: 100px;
+    padding: 4px 13px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #1389eb;
+  }
+  
+  .tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .options {
+    background: transparent;
+    border: 0;
+    color: #c4cad3;
+    font-size: 17px;
+  }
+  
+  .options svg {
+    fill: #9fa4aa;
+    width: 20px;
+  }
+  
+  .stats {
+    position: relative;
+    width: 100%;
+    color: #9fa4aa;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .stats div {
+    margin-right: 1rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .stats svg {
+    margin-right: 5px;
+    height: 100%;
+    stroke: #9fa4aa;
+  }
+  
+  .viewer span {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(28, 117, 219);
+    margin-right: -10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px;
+  }
+  
+  .viewer span svg {
+    stroke: #fff;
+  }
+  
+  .qr:hover{
+    border: black ;
+  }
+  
